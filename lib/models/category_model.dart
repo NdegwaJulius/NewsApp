@@ -1,6 +1,17 @@
 class CategoryModel{
-  late String categoryName;
-  late String imageUrl;
+   late String _categoryName;
 
-  void add(CategoryModel categoryModel) {}
+  String get categoryName => _categoryName;
+
+  set categoryName(String categoryName) {
+    _categoryName = categoryName;
+  }
+   late String _imageUrl;
+
+  String get imageUrl => _imageUrl;
+
+  set imageUrl(String imageUrl) {
+    _imageUrl = imageUrl;
+  }
+
 }
